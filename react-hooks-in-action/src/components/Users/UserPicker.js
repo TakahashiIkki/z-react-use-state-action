@@ -1,7 +1,12 @@
+import * as staticJson from "../../static.json";
+const { users } = staticJson;
+
 export function UserPicker() {
   return (
     <select>
-      <option>Users</option>
+      {users.map((user, i) => (
+        <option key={user.id}>{user.name}</option>
+      ))}
     </select>
   );
 }

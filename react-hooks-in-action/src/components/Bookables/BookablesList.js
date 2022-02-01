@@ -2,8 +2,6 @@ import { useState } from "react";
 import * as staticJson from "../../static.json";
 const { bookables } = staticJson;
 
-// import { bookables } from "../../static.json";
-
 export function BookablesList() {
   const group = "Rooms";
   const bookablesInGroup = bookables.filter((b) => b.group === group);
