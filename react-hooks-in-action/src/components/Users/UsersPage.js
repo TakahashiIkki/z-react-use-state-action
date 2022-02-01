@@ -1,4 +1,4 @@
-export default function UsersPage() {
+export function UsersPage() {
   return (
     <main className="users-page">
       <p>Users!</p>
